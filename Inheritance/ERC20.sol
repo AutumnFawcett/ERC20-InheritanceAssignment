@@ -13,9 +13,9 @@ contract ERC20 {    // Parent Contract
     event Approval(address indexed owner, address indexed spender, uint256 value);
 
     // Token metadata
-    string public name;
-    string public symbol;
-    uint8 public immutable decimals;
+    string public name;  // Token Name
+    string public symbol;  // Token Symbol
+    uint8 public immutable decimals;  // Indicates Token that the value can only be set once
     uint256 public totalSupply;  // Total Supply of Tokens minted                
     address public owner;    // Owner of the contract (usually who can mint or burn tokens)
 
